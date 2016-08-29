@@ -30,4 +30,13 @@ $(window).load(function () {
             $('.section3-dsc').css('margin-top', (height3 - heightSelf3) / 2);
         }
     }
+
+//设置about页面锚点滚动
+    $('.about .panel-body a').click(function () {
+        var target=this.dataset.target;
+        var offsetTop = $(target).offset().top;
+        var navbarHegiht=$('.navbar').height();
+        $('html,body').animate({scrollTop:offsetTop-navbarHegiht});
+    });
+
 });

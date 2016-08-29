@@ -117,6 +117,14 @@ footer {
 
 /*资讯end*/
 
+/*案例begin*/
+.case .thumbnail h4 {
+    text-align:center;
+}
+.case .thumbnail p{
+    text-align:center;
+}
+/*案例end*/
 @media (max-width: 768px) {
     .section1-h2 {
         font-size: 20px;
